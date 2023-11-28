@@ -100,15 +100,6 @@ def check_security_domain_overlap(resources):
         for connection in allowed_connections:
             print(f"Connessione consentita tra {connection[0]} e {connection[1]}")
 
-        # Verifica la distinzione tra domini di sicurezza e gruppi normali nei nomi delle risorse
-        for resource in resources:
-            if resource['name'].startswith("sd_"):
-                print(f"{resource['name']} è un dominio di sicurezza.")
-                # Puoi aggiungere ulteriori verifiche qui se necessario
-            else:
-                print(f"{resource['name']} è un gruppo normale.")
-                # Puoi aggiungere ulteriori verifiche qui se necessario
-
 
 if __name__ == "__main__":
     org_name = get_user_input("Inserisci il nome dell'organizzazione")
@@ -122,13 +113,15 @@ if __name__ == "__main__":
     generate_config(org_name, lighthouse_name, lighthouse_ip, real_ip, lighthouse_security_domains.split(','), is_lighthouse=True)
 
     client1_name = get_user_input("Inserisci il nome del client 1")
+    client1_ip = get_user_input("Inserisci l'IP del client 1")
     client1_security_domains = get_user_input("Inserisci i domini  per il client 1 (separati da virgola)")
-    generate_certificates(org_name, client1_name, lighthouse_ip, client1_security_domains)
+    generate_certificates(org_name, client1_name, client1_ip, client1_security_domains)
     generate_config(org_name, client1_name, lighthouse_ip, real_ip, client1_security_domains.split(','))
 
     client2_name = get_user_input("Inserisci il nome del client 2")
+    client2_ip = get_user_input("Inserisci l'IP del client 2")
     client2_security_domains = get_user_input("Inserisci i domini per il client 2 (separati da virgola)")
-    generate_certificates(org_name, client2_name, lighthouse_ip, client2_security_domains)
+    generate_certificates(org_name, client2_name, client2_ip, client2_security_domains)
     generate_config(org_name, client2_name, lighthouse_ip, real_ip, client2_security_domains.split(','))
 
     resources = [
