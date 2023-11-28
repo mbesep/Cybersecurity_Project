@@ -1,5 +1,5 @@
 # cyberProject
-major course project of Cybersecurity, University of Bologna 2023-2024  
+Major Course Project of Cybersecurity, University of Bologna 2023-2024  
 Giuseppe Pio Salcuni  
 Manuel Placella
 
