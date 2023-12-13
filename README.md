@@ -1,7 +1,7 @@
 # CyberProject
 Progetto del corso di Cybersecurity, Laurea Magistrale in Informatica , Università di Bologna 2023-2024
-Giuseppe Pio Salcuni - matr. 1100090
-Manuel Placella - matr. 1099701
+- Giuseppe Pio Salcuni - matr. 1100090
+- Manuel Placella - matr. 1099701
 
 # README - Script di Configurazione Rete Nebula
 
