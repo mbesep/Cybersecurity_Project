@@ -1,9 +1,7 @@
-# CyberProject
+# README - Script di Configurazione Rete Nebula - CyberProject
 Progetto del corso di Cybersecurity, Laurea Magistrale in Informatica , Università di Bologna 2023-2024
 - Giuseppe Pio Salcuni - matr. 1100090
 - Manuel Placella - matr. 1099701
-
-# README - Script di Configurazione Rete Nebula
 
 Questo script in Python automatizza il processo di configurazione per la creazione di una rete Nebula, semplificando e gestendo in modo efficiente i dati in input. Lo script definisce e implementa tre funzioni cruciali per il processo di configurazione della rete Nebula:
 
